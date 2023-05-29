@@ -1,0 +1,203 @@
+@media (max-width : 480px){
+    .container {
+        margin: 0 16px;
+    }
+
+    //** Start Header 
+    #header {
+        .header__navbar {
+
+            .close-icon {
+                display: none;
+            }
+
+            .navbar__menu {
+                display: none;
+            }
+
+            .navbar__btns {
+                display: none;
+            }
+
+            nav {
+                transition: transform .5s ease;
+                transform: translateX(100%);
+            }
+
+            .active {
+                transform: translateX(0%);
+                @include flex(center, null, null, column);
+                padding: 40px;
+                width: 216px;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                right: 0;
+                border-radius: 24px 0 0 24px;
+                background: rgba(0, 0, 0, 0.3);
+                backdrop-filter: blur(10px);
+
+                .close-icon {
+                    display: block;
+                    align-self: flex-start;
+                }
+
+                .navbar__menu {
+                    margin-top: 64px;
+                    @include flex(center, null, null, column);
+                    margin-right: 0;
+
+                    li {
+                        margin-right: 0;
+                        margin-bottom: 32px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+                .navbar__btns {
+                    @include flex(center, null, null, column);
+                    margin-top: 64px;
+
+                    button {
+                        margin-right: 0;
+
+                        &:first-child {
+                            margin-bottom: 32px;
+                        }
+                    }
+                }
+
+            }
+
+            .navbar__hamber-icon {
+                display: block;
+            }
+        }
+
+        .header__main {
+            .header__titles {
+                p {
+                    font-size: 12px;
+                }
+
+                h1 {
+                    font-size: 24px;
+                    text-align: center;
+                }
+
+                p.text {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    // End Header
+
+    //** Start Features 
+    #features {
+        .features__titles {
+            span {
+                font-size: 12px;
+            }
+
+            p {
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+
+        .features__cards {
+            .features__card {
+                margin-right: 0;
+                justify-content: center;
+
+                .features__card__text {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    // End Features
+
+    //** Start Courses 
+    #courses {
+        .course__product-cards {
+            justify-content: center;
+
+            .product-card {
+                margin-right: 0;
+                margin-bottom: 20px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    // End Courses
+
+    //** Start Podcasts 
+    #podcasts {
+        margin-top: 120px;
+
+        .podcast__title {
+            @include flex(null, center, null, null);
+            // display: flex;
+            // justify-content: center;
+            @include font($Inter-bold, 24px);
+            // font-family: $Inter-bold;
+            // font-size: 24px;
+        }
+
+        .podcast-items {
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 8px;
+            grid-row-gap: 20px;
+
+            .item {
+
+                &:nth-child(1) {
+                    grid-column: 1 / span 6;
+                    grid-row: 3 / span 1;
+                }
+
+                &:nth-child(2) {
+                    grid-row: 3 / span 1;
+                    grid-column: 7 / span 6;
+                }
+
+                &:nth-child(3) {
+                    grid-row: 4 / span 1;
+                    grid-column: 1 / span 6;
+                }
+
+                &:nth-child(4) {
+                    grid-row: 4 / span 1;
+                    grid-column: 7 / span 6;
+                }
+
+                &:nth-child(5) {
+                    grid-column: 1 / span 12;
+                    grid-row: 1 / span 2;
+                }
+
+            }
+        }
+    }
+    // End Podcasts
+
+    //** Start Footer 
+    #footer {
+        flex-direction: column;
+        align-items: center;
+
+        .footer__menu {
+            margin: 40px auto;
+        }
+    }
+    // End Footer
+
+}

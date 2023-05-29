@@ -1,0 +1,20 @@
+.btn{
+    padding: 12px 32px;
+    border-radius: 12px;
+    color: $White-color;
+    background: none;
+}
+
+.btn-active{
+    @extend .btn;
+    background-color: $Primary-color;
+    color: $Dark-color;
+    font-family: $Inter-bold;
+}
+
+.btn-secondry{
+    @extend .btn;
+    background: none;
+    font-family: $Inter-bold;
+    border: 2px solid $Border-color;
+}

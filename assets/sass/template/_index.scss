@@ -1,0 +1,240 @@
+.container {
+    margin: 0 auto;
+    max-width: 1236px;
+}
+
+body {
+    background-color: $Dark-color;
+    @include font($Inter-medium, 16px);
+    color: $White-color;
+}
+
+
+// ** Start Header
+#header {
+    padding-top: 40px;
+
+    .header__navbar {
+        @include flex(center, space-between, null, null);
+
+
+            nav{
+            @include flex(center, null, null, null);
+            
+            }
+
+            .close-icon {
+                display: none;
+            }
+
+            .navbar__menu {
+                margin-right: 125px;
+                @include flex(center, null, null, null);
+
+                li {
+                    margin-right: 32px;
+                    padding: 12px 32px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    a {
+                        color: $White-color;
+                    }
+                }
+            }
+        
+
+        .navbar__hamber-icon {
+            display: none;
+        }
+
+    }
+
+    .header__main {
+        margin-top: 64px;
+        @include flex(center, null, null, column);
+
+        .header__titles {
+            @include flex(center, null, null, column);
+
+            p {
+                color: $White-color-2;
+            }
+
+            h1 {
+                margin-top: 16px;
+                @include font($R_flex-bold, 64px);
+            }
+
+            p.text {
+                margin-top: 24px;
+                color: $White-color-2;
+            }
+
+            .btn-active {
+                margin-top: 32px;
+            }
+        }
+
+        .header__image {
+            margin-top: 40px;
+            border-radius: 24px;
+            max-width: 100%;
+        }
+    }
+}
+
+// ** Start Header
+#features {
+    margin-top: 120px;
+
+    .features__titles {
+        @include flex(center, null, null, column);
+
+        span {
+            color: $Primary-color;
+        }
+
+        p {
+            margin-top: 16px;
+            @include font($Inter-bold, 24px);
+            width: 592px;
+            text-align: center;
+        }
+    }
+
+    .features__cards {
+        margin-top: 20px;
+        @include flex(null, center, wrap, null);
+
+        .features__card {
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+    }
+}
+// End Header
+
+// ** Start Courses
+#courses {
+    margin-top: 120px;
+
+    .course__title {
+        @include flex(null, center, null, null);
+        @include font($Inter-bold, 24px);
+    }
+
+    .course__product-cards {
+        margin-top: 40px;
+        @include flex(center, center, wrap, null);
+        .product-card{
+            margin-right: 20px;
+        }   
+    }
+
+    a {
+        margin-top: 40px;
+        @include flex(null, center, null, null);
+    }
+}
+// End Courses
+
+
+
+// ** Start Podcasts
+#podcasts {
+    margin-top: 120px;
+    @include flex(center, null, null, column);
+
+    .podcast__title {
+        @include flex(null, center, null, null);
+        @include font($Inter-bold, 24px);
+    }
+
+    .podcast-items {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 20px;
+
+        .item {
+            img {
+                border-radius: 24px;
+            }
+
+            &:nth-child(1) {
+                grid-column: 1 / span 3;
+                grid-row: 1 / span 1;
+            }
+
+            &:nth-child(2) {
+                grid-column: 4 / span 3;
+                grid-row: 1 / span 1;
+            }
+
+            &:nth-child(3) {
+                grid-column: 1 / span 3;
+                grid-row: 2 / span 1;
+            }
+
+            &:nth-child(4) {
+                grid-column: 4 / span 3;
+                grid-row: 2 / span 1;
+            }
+
+            &:nth-child(5) {
+                grid-column: 7 / span 6;
+                grid-row: 1 / span 2;
+            }
+
+        }
+    }
+
+    a {
+        margin-top: 40px;
+        @include flex(null, center, null, null);
+    }
+}
+// End Podcasts
+
+
+// ** Start Footer
+#footer {
+    margin-top: 120px;
+    padding-bottom: 40px;
+    @include flex(center, space-between, wrap, null);
+
+
+    .footer__menu {
+        @include flex(center, null, wrap, null);
+
+
+        li {
+            margin-right: 32px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                color: $White-color-2;
+            }
+        }
+    }
+
+    .footer__social-media {
+        @include flex(center, null, null, null);
+
+        a {
+            margin-right: 32px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+// End Footer

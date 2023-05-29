@@ -1,0 +1,23 @@
+.features__card{
+    padding: 24px;
+    border-radius: 24px;
+    background-color: $Dark-color-2;
+    width: 289px;
+    .features__card__titles{
+        display: flex;
+        align-items: center;
+        .icon{
+            padding: 12px;
+            background-color: $Dark-color;
+            border-radius: 50%;
+        }
+        p{
+            margin-left: 12px;
+            font-family: $Inter-bold;
+        }
+    }
+    .features__card__text{
+        margin-top: 16px;
+        color: $White-color-2;
+    }
+}

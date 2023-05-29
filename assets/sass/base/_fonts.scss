@@ -1,0 +1,21 @@
+$Inter-bold : "Inter-Bold";
+$Inter-medium : "Inter-Medium";
+$R_flex-bold : "R-Flex Bold";
+
+$Url : "../fonts";
+
+@font-face {
+    font-family: $Inter-bold;
+    src: url("#{$Url}/#{$Inter-bold}.woff2") format("woff2");
+    line-height: 150%;
+}
+@font-face {
+    font-family: $Inter-medium;
+    src: url("#{$Url}/#{$Inter-medium}.woff2") format("woff2");
+    line-height: 150%;
+}
+@font-face {
+    font-family: $R_flex-bold;
+    src: url("#{$Url}/#{$R_flex-bold}.woff2") format("woff2");
+    line-height: 120%;
+}
