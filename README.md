@@ -2,7 +2,7 @@
 <img width="1200" alt="1" src="https://github.com/ArefShojaei/FahimEnglish-website/assets/134844185/759f3514-2306-4a31-b2c2-2491273a6af5">
 
 <h3 align="center">
-  This project has been created by HTML, CSS & Vanilla JavaScript <br><br>+ 2 versions for Web & Mobile <br><br> <a href='https://chic-centaur-2499d1.netlify.app/'>Demo</a>
+  This project has been created by HTML, CSS ( SASS ) & Vanilla JavaScript <br><br>+ 2 versions for Web & Mobile <br><br> <a href='https://chic-centaur-2499d1.netlify.app/'>Demo</a>
 </h3>
 <p align="center">
   <h2>1️⃣ Web Version</h2>
